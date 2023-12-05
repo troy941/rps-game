@@ -1,1 +1,2 @@
 # rps-game
+The purpose of making this game of rock paper scissors is to test my current -- and basic -- JavaScript abilities by creating a game of rock paper scissors from scratch and with seemingly little guidance. The current goal is for this game to operate from only inside the console -- with no user interface besides a command prompt. I plan to add a full GUI later. :)
