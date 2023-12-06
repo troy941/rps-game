@@ -1,26 +1,22 @@
-// Below is the code for the computer's random selection.
-const rockPaperSciccors = [`rock`,`paper`,`scissors`];
+
+function game() {
+const rockPaperSciccors = ["rock","paper","scissors"];
 
 function getComputerChoice() {
-    const randomChoice = Math.floor(Math.random() * rockPaperSciccors.length);
-
-    const choice = rockPaperSciccors[randomChoice];
-
+const randomChoice = Math.floor(Math.random() * rockPaperSciccors.length);
+    
+const choice = rockPaperSciccors[randomChoice];
+    
     return choice;
-}
-let computerChoice = getComputerChoice();
+ }
 
+let computerChoice = getComputerChoice();
 console.log(computerChoice);
 
-// Below is the code for the user's selection. It's set to lower case to match the original array.
 let getUserChoice = prompt("Make your choice! Rock, paper or sciccors!", "");
-
 let userChoice = getUserChoice.toLocaleLowerCase();
-
 console.log(userChoice);
 
-//Here it is! Baby's first game :)
-function game() {
 if(computerChoice === "rock" && userChoice === "scissors") {
     return "You lose! Rock beats scissors...";
 } else if(computerChoice === "paper" && userChoice === "rock") {
