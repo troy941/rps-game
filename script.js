@@ -67,14 +67,14 @@ function playRound() {
     }
     function game() {
         console.log(playRound());
-        console.log("Robots: " + computerScore, "Humans: " + userScore);
-        console.log(playRound());
-        console.log("Robots: " + computerScore, "Humans: " + userScore);
-        console.log(playRound());
-        console.log("Robots: " + computerScore, "Humans: " + userScore);
-        console.log(playRound());
-        console.log("Robots: " + computerScore, "Humans: " + userScore);
-        console.log(playRound());
-        console.log("Final Score... Robots: " + computerScore, "Humans: " + userScore);
     }
-    game();
+
+    while(userScore < 5 && computerScore < 5) {
+        game();
+        console.log("Humans: " + userScore, "Robots: " + computerScore);
+        if(userScore == 5) {
+            console.log("Congrats! You won the game");
+        } else if(computerScore == 5) {
+            console.log("Loser.");
+        }
+    }
